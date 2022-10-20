@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - list all the natural num < 1024 mult of 3 or 5
@@ -7,12 +7,12 @@
  */
 int main(void)
 {
-	int 1, sum = 0;
+	int i, sum = 0;
 
-	for (1 = 0; 1 < 1024; 1++)
+	for (i = 0; i < 1024; i++)
 	{
-		if ((1 % 30) == 0 || (1 % 5) == 0)
-			sum = 1;
+		if ((i % 3) == 0 || (1 % 5) == 0)
+			sum += i;
 	}
 
 	printf("%d\n", sum);
